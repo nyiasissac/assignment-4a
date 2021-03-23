@@ -1,0 +1,143 @@
+
+@font-face {
+  font-family: Abril_Fatface;
+  src: url(fonts/Abril_Fatface/abrilFatface-Regular.ttf);
+}
+
+@font-face{
+  font-family: Cormorant_Garamond;
+  src: url(fonts/Cormorant_Garamond/CormorantGaramond-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Cormorant;
+  src: url(fonts/Cormorant/Cormorant-SemiBold.ttf)
+}
+
+@font-face {
+  font-family: Cormorant_Garamond2;
+  src: url(fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf);
+}
+
+body{
+ display: flex;
+ justify-content: center;
+ background-color: #181819;
+ opacity: 1;
+ background-image:  linear-gradient(30deg, #b19810 12%, transparent 12.5%, transparent 87%, #b19810 87.5%, #b19810), linear-gradient(150deg, #b19810 12%, transparent 12.5%, transparent 87%, #b19810 87.5%, #b19810), linear-gradient(30deg, #b19810 12%, transparent 12.5%, transparent 87%, #b19810 87.5%, #b19810), linear-gradient(150deg, #b19810 12%, transparent 12.5%, transparent 87%, #b19810 87.5%, #b19810), linear-gradient(60deg, #b1981077 25%, transparent 25.5%, transparent 75%, #b1981077 75%, #b1981077), linear-gradient(60deg, #b1981077 25%, transparent 25.5%, transparent 75%, #b1981077 75%, #b1981077);
+ background-size: 40px 70px;
+ background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+}
+
+h1{
+  font-family: Abril_Fatface;
+}
+#container{
+  font-family: Cormorant_Garamon;
+}
+
+#content-box{
+  font-family: Cormorant_Garamond2;
+}
+#container{
+position: relative;
+top: 100px;
+width: 800px;
+}
+
+#content-box{
+  background: #b19810;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  padding: 20px;
+  width: 510px;
+  box-shadow: 10px 10px 8px #6C694D;
+  font-size: 20px;
+
+}
+#hero-image{
+  display: flex;
+  justify-content: center;
+
+}
+
+#hero-image img{
+  width: 350px;
+  height: 350px;
+}
+ul{
+  position: relative;
+  list-style-type: none;
+  margin-bottom: 50px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+
+}
+
+a{
+text-decoration: none;
+padding: 5px;
+}
+
+li{
+  padding: 5px;
+}
+a:hover{
+background: #b19810;
+}
+
+img{
+  display: flex;
+  justify-content: center;
+}
+
+h1{
+  text-align: center;
+}
+
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+  justify-content: center;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
